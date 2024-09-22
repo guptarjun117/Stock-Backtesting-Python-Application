@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>390</width>
+    <height>295</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>55</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Backtesting Trading Strategies</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(186, 186, 186);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>20</y>
+      <width>331</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Avenir LT Std 45 Book</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Python Application To Backtest Trading Strategies</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>60</y>
+      <width>331</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Avenir LT Std 45 Book</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Choose a Trading Strategy to Backtest</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>80</y>
+      <width>331</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Avenir LT Std 45 Book</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>(you can choose multiple strategies)</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_MR">
+    <property name="geometry">
+     <rect>
+      <x>37</x>
+      <y>114</y>
+      <width>191</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Mean Reversion</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_RSI">
+    <property name="geometry">
+     <rect>
+      <x>37</x>
+      <y>143</y>
+      <width>241</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Relative Strength Index</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_MACD">
+    <property name="geometry">
+     <rect>
+      <x>37</x>
+      <y>173</y>
+      <width>401</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Moving Average Convergence/Divergence</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_Stochastic">
+    <property name="geometry">
+     <rect>
+      <x>37</x>
+      <y>203</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Stochastic Oscillator</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Backtest_button">
+    <property name="geometry">
+     <rect>
+      <x>199</x>
+      <y>243</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Avenir LT Std 45 Book</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(195, 195, 195);</string>
+    </property>
+    <property name="text">
+     <string>SUBMIT</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Goback">
+    <property name="geometry">
+     <rect>
+      <x>99</x>
+      <y>243</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Avenir LT Std 45 Book</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(195, 195, 195);</string>
+    </property>
+    <property name="text">
+     <string>GO BACK</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
